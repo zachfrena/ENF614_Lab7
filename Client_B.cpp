@@ -12,5 +12,5 @@ void Client_B::add(string username, string password){
 
 User* Client_B::validate(string username, string password){
     instance = LoginServer::getInstance();
-    return (*instance).validate(username,password);
+    return (*instance).validate(username, password);
 }
