@@ -7,10 +7,10 @@ using namespace std;
 #ifndef User_HPP
 #define User_HPP
 
-struct User{
+typedef struct User{
 public:
 string username;
 string password;
 
-};
+}User;
 #endif

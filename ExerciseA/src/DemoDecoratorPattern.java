@@ -13,7 +13,8 @@ public class DemoDecoratorPattern extends JPanel {
     public void paintComponent(Graphics g){
 
  	    int fontSize = 10;
-         /*
+        //portion for Exercise A
+
  	    g.setFont(new Font("TimesRoman", Font.PLAIN, fontSize));
 
  	    // Now lets decorate t with BorderDecorator: x = 30, y = 30, width = 100, and height 100
@@ -24,19 +25,17 @@ public class DemoDecoratorPattern extends JPanel {
  	    t = new ColouredFrameDecorator(t, 25, 25, 111, 111, 10);
 
  	    // Now lets draw the product on the screen
-
-        t = new ColouredGlassDecorator(t, 25, 25, 110, 110);
  	    t.draw(g);
-        */
+
 
          //portion for exercise B:
-        g.setFont(new Font("TimesRoman", Font.PLAIN, fontSize));// GlassFrameDecoratorinfo: x = 25, y = 25, width = 110, and height = 110
-        t=  new ColouredGlassDecorator(
-                new ColouredFrameDecorator(
-                        new BorderDecorator(
-                                t, 30, 30, 100, 100), 25, 25, 110, 110, 10), 25, 25,110, 110);
-        t.draw(g);
-
+//        g.setFont(new Font("TimesRoman", Font.PLAIN, fontSize));// GlassFrameDecoratorinfo: x = 25, y = 25, width = 110, and height = 110
+//        t=  new ColouredGlassDecorator(
+//                new ColouredFrameDecorator(
+//                        new BorderDecorator(
+//                                t, 30, 30, 100, 100), 25, 25, 110, 110, 10), 25, 25,110, 110);
+//        t.draw(g);
+//
     }
 	
 	public static void main(String[] args) {	

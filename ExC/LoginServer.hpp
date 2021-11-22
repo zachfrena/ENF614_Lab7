@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -22,7 +21,7 @@ LoginServer(const LoginServer& src);
 LoginServer& operator =(const LoginServer& rhs);
 
 protected:
-vector<User> users = vector<User>(7);
+vector<User> users = vector<User>();
 static LoginServer* instance;
 
 };

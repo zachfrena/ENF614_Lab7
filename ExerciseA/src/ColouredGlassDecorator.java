@@ -5,7 +5,6 @@ public class ColouredGlassDecorator extends Decorator{
 
     public ColouredGlassDecorator(Component cmp, int x, int y, int width, int height){
         super(cmp, x, y, width, height);
-        //this.alpha = alpha;
     }
 
 

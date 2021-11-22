@@ -15,7 +15,7 @@ public class Text implements Component{
 
     public void draw(Graphics g){
         g.setColor(new Color(0,100,0));
-        g.drawString("Hello World", x, y);
+        g.drawString(text, x, y);
 
     }
 }
